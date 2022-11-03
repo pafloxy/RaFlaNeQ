@@ -113,7 +113,7 @@ if __name__ == "__main__":
     Z = np.array([[1, 0], [0, -1]])  # Pauli-Z operator
     f = np.array(np.kron(Z, Z), requires_grad=False)  # Parity function
     V = unitary_group.rvs(4)  # random 4x4 unitary
-    delta = 0.10  # gap between data vectors (larger = easier to seperate)
+    delta = 0.30  # gap between data vectors (larger = easier to seperate)
     params = {"f": f, "V": V, "delta": delta}
     n_points = 10000
 
